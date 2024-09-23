@@ -1,0 +1,14 @@
+---
+layout: page
+title: "Join Us!"
+description: "「email」"
+---
+<div class="en post-container">
+    {% capture join %}{% include join/join.md %}{% endcapture %}
+    {{ join | markdownify }}
+
+    <div class="contact-form-wrapper">
+        {% include contact-form.html %}
+    </div>
+</div>
+

@@ -1,0 +1,12 @@
+---
+layout: page
+title: "People"
+description: "「Conductor and Leader」"
+---
+<div class="en post-container">
+    {% capture about_liz %}{% include people/liz.md %}{% endcapture %}
+    {{ about_liz | markdownify }}
+
+    {% capture about_hannah %}{% include people/hannah.md %}{% endcapture %}
+    {{ about_hannah | markdownify }}
+</div>
