@@ -6,7 +6,7 @@ email: camden@gmail.com
 description: "A friendly Community Orchestra in Camden, London"
 keyword: "Orchestra, London, Camden, Music, Community"
 url: "alexstillalex.github.io" # your host, for absolute URL
-baseurl: "alcoholic-cellist" # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/alcoholic-cellist" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
