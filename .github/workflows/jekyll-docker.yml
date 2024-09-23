@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
   build:
 
@@ -19,7 +23,7 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
-     # Deployment job
+    # Deployment job
   deploy:
     environment:
       name: github-pages
